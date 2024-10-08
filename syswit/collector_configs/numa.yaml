@@ -1,0 +1,7 @@
+---
+hugepages:
+  - size:
+  - files:
+proc_vmstat:
+  - metrics: "numa_hit, numa_miss, numa_foreign, numa_interleave, numa_local, numa_other, numa_pte_updates, numa_huge_pte_updates, numa_hint_faults, numa_hint_faults_local, numa_pages_migrated"
+...

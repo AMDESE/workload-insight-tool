@@ -1,0 +1,2 @@
+recursive-include syswit/collector_configs *
+recursive-include syswit/tool_configs *

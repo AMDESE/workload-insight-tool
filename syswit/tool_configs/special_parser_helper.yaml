@@ -1,0 +1,8 @@
+---
+proc_stat:
+  - metrics: "user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice"
+p_proc_stat:
+  - metrics: "pid, exe name, state, ppid, pgrp, session id, tty no, tpgid, flags, minor faults, c minor faults, major faults, c major fault, utime, stime, c utime, c stime, priority, nice, num threads, NAN, start time, vm size, RSS, RSS soft limit, startcode, endcode, start stack, Stack pinter value, instruction pointer value, pending signals, blocked signals, ignored signal, caught signals, wait channel, #swapped pages, #cswapped pages, exit signal, processor, rt_priority, sched policy, delayacct_blkio_ticks, guest_time, cguest_time, BSS start, BSS end, start_brk, arg_start, arg_end, env_start, env_end, exit_code"
+p_proc_statm:
+  - metrics: "total program size, Resident set size, resident shared pages, text, lib, data + stack, dirty pages"
+...

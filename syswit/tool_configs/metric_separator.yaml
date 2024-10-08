@@ -1,0 +1,12 @@
+---
+proc_meminfo: ":"
+proc_vmstat: " "
+proc_iomem: " "
+proc_cpuinfo: ":"
+sys_meminfo: ":"
+sys_numastat: " "
+sys_vmstat: " "
+#pid related
+p_proc_status: ":"
+p_proc_sched: ":"
+...

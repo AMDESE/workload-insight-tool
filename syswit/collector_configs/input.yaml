@@ -1,0 +1,30 @@
+---
+hugepages:
+  - size:
+  - files:
+proc_meminfo:
+  - metrics:
+proc_vmstat:
+  - metrics:
+proc_stat:
+  - metrics:
+proc_iomem:
+  - metrics:
+proc_cpuinfo:
+  - metrics:
+sys_meminfo:
+  - metrics:
+sys_numastat:
+  - metrics:
+sys_vmstat:
+  - metrics:
+#pid related
+p_proc_stat:
+  - metrics:
+p_proc_statm:
+  - metrics:
+p_proc_status:
+  - metrics:
+p_proc_sched:
+  - metrics:
+...
