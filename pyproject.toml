@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: MIT License
+# Copyright (C) 2024 Advanced Micro Devices, Inc.
+#
+# Author: Ayush Jain <ayush.jain3@amd.com>
+
+
+[build-system]
+requires = ["setuptools>=59.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syswit"
+version = "1.0.0"
+description = "Workload Insight Tool (syswit) is a tool to analyze workloads on Linux. It collects global and process related system stats exposed by the kernel (via procfs and sysfs files) in a time-series manner using collector. Collected data can be analyzed using analyzer. Data from multiple runs can be compared using comparator."
+authors = [{ name = "Ayush Jain", email = "ayush.jain3@amd.com" }]
+requires-python = ">=3.8"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT License"}
+classifiers = [
+            "License :: OSI Approved :: MIT License",
+            "Programming Language :: Python :: 3.10",
+            "Operating System :: POSIX :: Linux",
+        ]
+dependencies = ["argparse", "datetime", "dcc", "dash-core-components", "plotly-express", "py-libnuma", "more-itertools", "dash_bootstrap_components", "dash==2.17.0", "dash_bootstrap_components==1.6.0", "jsonmerge==1.9.2", "netifaces==0.11.0", "pandas==2.2.2", "plotly==5.22.0", "psutil==5.9.8", "PyYAML==6.0.1"]
+
+[project.urls]
+homepage = "https://github.com/AMDESE/workload-insight-tool"
+
+[project.scripts]
+syswit = "syswit.main:main"
+
+[tool.setuptools]
+packages = ["syswit"]
+include-package-data = true
+
+[tool.distutils.sdist]
+formats = "zip"

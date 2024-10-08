@@ -1,0 +1,5 @@
+build/
+dist/
+syswit.egg-info/
+syswit/__pycache__/
+logs/
